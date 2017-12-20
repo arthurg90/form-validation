@@ -1,0 +1,223 @@
+// Generic styling:
+
+$brandColourOne: #2e4353;
+$brandColourTwo: #2f7bbe;
+$errorColour: #ee5045;
+$textColourOne: white;
+$textColourTwo: #b3bbc4;
+$mainFont: 'arial', sans-serif;
+$verticalSpace: 1.4em;
+$borderStyle: 2px solid white;
+$formBackgroundColour: #364a59;
+
+
+body {
+	background: $brandColourOne;
+	font-family: $mainFont;
+	color: $textColourOne;
+	
+}
+
+header {
+	background-color: none;
+	border-bottom: 14px solid #2f7bbe;
+
+}
+
+header.col-md-12 {
+	padding: 0;
+}
+
+
+// Specific Elements:
+
+.devMeLogo {
+	position: absolute;
+	padding-top: 1%;
+
+}	
+
+.mainLogo {
+	padding: 1% 0 2% 2%;
+
+}
+
+.container.col-md-12 {
+
+	margin-top: 5%;
+}
+
+h1 {
+	display: none;
+}
+
+
+// Bootstrap elements overwrite:
+
+// Team and Country select
+
+.form-control {
+	background-color: $formBackgroundColour; 
+	color: $textColourTwo;
+	border: 0;
+	border-radius: 0;
+}
+
+input.btn {
+	color: #316797;
+	font-size: 2rem;
+	font-family: $mainFont;
+	font-weight: bold;
+	border: 0;
+	background: none;
+}
+
+.btn:hover {
+	color: #546674;
+	
+}
+
+.btn:active {
+	box-shadow: none;
+}
+
+.btn:focus {
+	outline: none;
+}
+
+.dropdown-toggle.bs-placeholder.btn-default {
+	color: #8f9ba5;
+	background-color: #364a59;
+	background-image: url("../img/dropdown-arrow-closed.png");
+	background-repeat: no-repeat;
+	background-position:98% 65%;
+	background-size: 1.4rem; 
+	font-family: $mainFont;
+	font-size: 1.2rem;
+	border: none;
+
+}
+
+.caret {
+	display: none;
+}
+
+.dropdown-menu {
+	left: 100%;
+	top: -250%;
+	background-color: #364a59;
+	font-family: $mainFont;
+	font-style: bold;
+}
+
+
+.bootstrap-select.btn-group .dropdown-menu {
+	min-width: 60%;
+}
+
+
+
+.dropdown-menu li a {
+	color: white;
+	font-family: $mainFont;
+	font-weight: bold;
+	
+}
+
+.dropdown-menu.open {
+	border-radius: 0;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	min-width: 60%;
+	
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+	color: $brandColourTwo;
+	background-color: $formBackgroundColour;
+	border: 2px solid $brandColourTwo;
+}
+
+.btn-default, .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active:focus, .btn-default:active.focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default, .btn-default:visited, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
+	background-color: $formBackgroundColour;
+	border: none;
+	color: $textColourTwo;
+}
+
+// Styling of form validation error arrowbox (http://www.cssarrowplease.com/)
+
+.has-error .help-block {
+	position: relative;
+	background: $errorColour;
+}
+
+.has-error .help-block::before {
+	bottom: 100%;
+	left: 15%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: $errorColour;
+	border-width: 10px;
+	margin-left: -30px;
+}
+
+
+ul.list-unstyled {
+	color: white;
+	padding: 2% 2%;
+}
+
+
+
+
+// .arrow_box {
+// 	position: relative;
+// 	background: green;
+// 	border: 2px solid #ee5045;
+		 
+// }
+
+// .arrow_box:after, .arrow_box:before {
+// 	bottom: 100%;
+// 	left: 10%;
+// 	border: solid transparent;
+// 	content: " ";
+// 	height: 0;
+// 	width: 0;
+// 	position: absolute;
+// 	pointer-events: none;
+// }
+
+// .arrow_box:after {
+// 	border-color: rgba(238, 80, 69, 0);
+// 	border-bottom-color: red;
+// 	border-width: 30px;
+// 	margin-left: -30px;
+// }
+
+// .arrow_box:before {
+// 	border-color: rgba(194, 225, 245, 0);
+// 	border-bottom-color: #ee5045;
+// 	border-width: 36px;
+// 	margin-left: -36px;
+	
+// }
+
+
+
+
+// }
+
+
+
+
+
+// FOR LAYOUT CLARITY:
+// div {
+// 	border: 1px solid red;
+// }

@@ -1,0 +1,43 @@
+$brandColourOne: #2e4353;
+$mainFont: 'arial bold', sans-serif;
+$verticalSpace: 1.4em;
+$borderStyle: 2px solid white;
+
+.headerFont {
+	font-family: sans-serif;
+	color: white;
+	font-size: 1.4em;
+	line-height: 1.2;
+}
+
+
+
+body {
+	background: $brandColourOne;
+	font-family: $mainFont;
+
+// }
+
+// input {
+// 	border: $brandColourOne
+// }
+
+// section {
+// 	margin: $verticalSpace/4;
+// }
+
+// nesting:
+
+// nav {
+// 	background: red;
+
+// 	ul {
+// 		display: inline;
+
+// 	}
+
+// 	li {
+
+// 	}
+
+// }
